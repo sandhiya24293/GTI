@@ -1,7 +1,7 @@
 package Mysql
 
 import (
-	InitDb "Dgraph/Common/DB/Mysql/InitializeDB"
+	InitDb "GTI/Common/DB/Mysql/InitializeDB"
 	"database/sql"
 )
 
