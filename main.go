@@ -1,7 +1,7 @@
 package main
 
 import (
-	Db "Dgraph/Common/DB/Mysql"
+	Db "GTI/Common/DB/Mysql"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"

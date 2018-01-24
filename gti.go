@@ -49,7 +49,7 @@ var Response ReputationCat
 
 func getdomain(domain string) {
 
-	urlStr := "http://localhost:8087/local/gti/" + domain + "/rate"
+	urlStr := "http://192.155.93.248:8087/local/gti/" + domain + "/rate"
 
 	resp, err := http.Get(urlStr)
 	if err != nil {
@@ -72,7 +72,7 @@ func getdomain(domain string) {
 	Response.Domain = domain
 	Response.Reputation = res.Reputation
 	Response.Categories = res.Categories
-	source = "https://adaway.org/hosts.txt"
+	source := "https://adaway.org/hosts.txt"
 
 	Db.InsertDomain(Response.Domain, Response.Reputation, Response.Categories, source)
 

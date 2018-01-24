@@ -59,7 +59,7 @@ func InsertDomain(Domain string, Reputation int, Categories []int, source string
 
 			}
 
-			rows, err := OpenConnection["GTI"].Exec("insert into GTIcategory (DomainID,Gticategory) values (?,?)", Gtiid, Gtimapid)
+			rows, err := OpenConnection["GTI"].Exec("insert into GTIMAP (DomainID,GTIid) values (?,?)", Gtiid, Gtimapid)
 			if err != nil {
 				log.Println("Error -DB: Executive insert picture", err, rows)
 
